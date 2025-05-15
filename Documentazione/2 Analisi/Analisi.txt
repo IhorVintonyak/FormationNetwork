@@ -1,0 +1,6 @@
+Il solito scheduling dep progetto non può essere applicato per. Ogni task dovrebbe durare almeno 1 settimana, non è possibile per mancanza di tempo.
+
+Priorità del progetto è bassa per tale motivo al gruppo del progetto saranno associati solo:
+CEO "***"
+
+Qualsiasi ritardo al deadline, deve essere inviato tramite il modulo specifico, dove sara spiegato il motivo di ritardo, e quanto tempo necessario per finirlo.

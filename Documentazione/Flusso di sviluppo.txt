@@ -1,0 +1,34 @@
+Analisi -> requisiti(Cosa vuole cliente, analisi del mercato, competenze necessarie, tempi e costi)
+Progettazione -> Architettura(Design pattern, stile do architettura, CRC card)
+Implementazione-> Codice(Linguaggi di programmazione scelti, tecnologie usati)
+Testing(Quali errori sono stati trovati)
+Manutenzione(Come si può migliorare)
+
+1. Inizio del progetto
+14/05/2025
+
+2. Analisi 
+15/05/2025 - 16/05/2025
+
+3. Progettazione 
+17/05/2025 - 18/05/2025
+
+4.
+a) Implementazione
+19/05/2025 - 28/05/2025
+&&
+b) Test 
+19/05/2025 - 28/05/2025
+
+5.Controllo di qualità
+29/05/2025
+
+6.
+a)Test UX e decorativi
+30/05/2025-01/06/2025
+&&
+b)Analisi per manutenzione
+30/05/2025-01/06/2025
+
+7.Conferma con il cliente 	
+03/06/2025

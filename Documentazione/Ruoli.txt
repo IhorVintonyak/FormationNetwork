@@ -1,0 +1,11 @@
+1.Inizio del progetto		Cliente, CEO	
+2.Analisi 			CEO,Teamlead(+Architettore)
+3.Progettazione	 		Teamlead(+Architettore)
+4.Implementazione && Test 	SoftwareDveloper+tester, UI/UX designer
+
+5.Controllo di qualità		CEO,Teamlead(+Architettore)
+
+6.Test UX e decorativi		SoftwareDveloper+tester, UI/UX designer
+Analisi per manutenzione	Teamlead(+Architettore),Cliente
+
+7.Conferma con il cliente 	Cliente, CEO, TeamLead
