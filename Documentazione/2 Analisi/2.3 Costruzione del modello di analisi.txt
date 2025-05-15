@@ -1,0 +1,325 @@
+									UML 
+ Class Diagram – Versione iniziale (concettuale)
+ Utente
++id: int
+
++nome: string
+
++cognome: string
+
++email: string
+
++password: string
+
++tipo: enum {Universitario, Scuola}
+
++ente: string
+
+Metodi:
+
++login()
+
++registrati()
+
+ AttivitàFormativa
++id: int
+
++titolo: string
+
++descrizione: string
+
++data: date
+
++luogo: string
+
++destinatari: enum {Studenti, Docenti}
+
++numeroMassimoPartecipanti: int
+
++ricorrente: boolean
+
+Relazioni:
+
+1 Utente (docente universitario) crea 0..* AttivitàFormativa
+
+1 AttivitàFormativa può avere 0..* Hashtag
+
+ Hashtag
++id: int
+
++testo: string
+
+Relazioni:
+
+relazione molti-a-molti con AttivitàFormativa
+
+ RichiestaPartecipazione
++id: int
+
++numeroStudenti: int
+
++dataRichiesta: datetime
+
++stato: enum {InAttesa, Approvata, Rifiutata}
+
+Relazioni:
+
+1 Utente (docente scuola) fa 0..* RichiestaPartecipazione
+
+1 AttivitàFormativa riceve 0..* RichiestaPartecipazione
+
+ Amministratore (opzionale)
+Estende Utente
+
++gestisceUtenti()
+
++modificaAttività()
+
++modificaRichieste()
+
+ Relazioni principali
+Utente (docente universitario) ↔ crea ↔ AttivitàFormativa
+
+Utente (docente scuola) ↔ invia ↔ RichiestaPartecipazione
+
+AttivitàFormativa ↔ composta da ↔ Hashtag
+
+AttivitàFormativa ↔ riceve ↔ RichiestaPartecipazione
+
+ Note progettuali
+Le classi Utente, AttivitàFormativa e RichiestaPartecipazione saranno le entità principali nel database.
+
+Questo modello potrà essere raffinato in fase di progettazione dettagliata:
+
+separando backend e frontend (DTO vs Entity)
+
+introducendo classi di servizio (controller, manager)
+
+definendo ruoli e permessi con maggiore granularità
+
+
+
+									UML - casi d'uso
+
+
+ Attori principali
+Docente Universitario: crea e gestisce le attività formative.
+
+Docente Scuola: ricerca e richiede la partecipazione alle attività.
+
+Amministratore: supervisiona e gestisce utenti e contenuti del sistema.
+
+ Casi d’uso principali
+Per il Docente Universitario:
+Creare attività formativa: inserisce nuove attività specificando dettagli come titolo, descrizione, data, luogo, destinatari e hashtag.
+
+Modificare attività: aggiorna le informazioni di attività già create.
+
+Cancellare attività: rimuove attività non più valide.
+
+Visualizzare richieste di partecipazione: consulta le richieste ricevute dai docenti delle scuole.
+
+Gestire richieste: approva o rifiuta le richieste di partecipazione.
+
+Per il Docente Scuola:
+Registrarsi al sistema: crea un nuovo account nel sistema.
+
+Accedere al sistema: effettua il login per utilizzare le funzionalità disponibili.
+
+Ricercare attività formative: utilizza filtri per trovare attività pertinenti.
+
+Richiedere partecipazione: invia una richiesta per partecipare a un'attività, specificando il numero di studenti coinvolti.
+
+Per l’Amministratore:
+Gestire utenti: aggiunge, modifica o rimuove utenti dal sistema.
+
+Gestire attività: supervisiona e modifica le attività presenti nel sistema.
+
+Gestire richieste: monitora e interviene sulle richieste di partecipazione.
+
+ Relazioni tra attori e casi d’uso
+Il Docente Universitario è associato ai casi d’uso di creazione, modifica, cancellazione di attività e gestione delle richieste.
+
+Il Docente Scuola è associato ai casi d’uso di registrazione, accesso, ricerca di attività e invio di richieste di partecipazione.
+
+L’Amministratore è associato ai casi d’uso di gestione utenti, attività e richieste.
+
+ Strumenti consigliati per la creazione del diagramma
+Per disegnare il diagramma dei casi d’uso, puoi utilizzare i seguenti strumenti:
+
+Lucidchart: offre modelli predefiniti e una vasta libreria di forme UML.
+
+Draw.io (diagrams.net): gratuito e facile da usare, ideale per creare diagrammi UML.
+
+StarUML: uno strumento professionale per la modellazione UML
+
+
+
+								Algoritmi di uso
+Docente Universitario
+C1. Creare attività formativa
+Il docente accede alla sezione "Crea nuova attività".
+
+Il sistema mostra un modulo da compilare.
+
+Il docente inserisce:
+
+Titolo
+
+Descrizione
+
+Data/ora
+
+Luogo
+
+Tipo di destinatari (studenti/docenti)
+
+Numero massimo partecipanti
+
+Hashtag
+
+Frequenza (singola o ricorrente)
+
+Il docente invia il modulo.
+
+Il sistema valida i dati.
+
+Se tutto è corretto, l’attività viene salvata nel database e associata al docente.
+
+Il sistema conferma l’avvenuta creazione.
+
+C2. Modificare attività
+Il docente visualizza la lista delle proprie attività.
+
+Clicca su "Modifica" accanto all’attività desiderata.
+
+Il sistema carica il modulo precompilato.
+
+Il docente apporta le modifiche e conferma.
+
+Il sistema valida i dati e aggiorna l’attività nel database.
+
+Il sistema conferma l’avvenuta modifica.
+
+C3. Cancellare attività
+Il docente seleziona l’attività da eliminare.
+
+Clicca su “Elimina”.
+
+Il sistema chiede conferma.
+
+Se confermato, l’attività viene rimossa dal database (oppure marcata come “non visibile”).
+
+Il sistema notifica l’eliminazione.
+
+C4. Visualizzare richieste
+Il docente seleziona un’attività.
+
+Il sistema mostra l’elenco delle richieste ricevute con i dettagli (scuola, numero studenti, stato).
+
+Può filtrare o ordinare le richieste.
+
+C5. Gestire richieste
+Dalla lista delle richieste, il docente seleziona una richiesta “In attesa”.
+
+Clicca su “Approva” o “Rifiuta”.
+
+Il sistema aggiorna lo stato della richiesta.
+
+Il sistema notifica l’esito al docente richiedente.
+
+ Docente Scuola
+C6. Registrarsi
+Il docente accede alla pagina di registrazione.
+
+Compila:
+
+Nome, cognome
+
+Email
+
+Password
+
+Ente di appartenenza
+
+Invia i dati.
+
+Il sistema verifica che l’email non sia già registrata.
+
+Salva i dati criptando la password.
+
+Invia un messaggio di conferma o attiva l’account direttamente.
+
+C7. Accedere al sistema
+Inserisce email e password nella pagina di login.
+
+Il sistema verifica le credenziali.
+
+Se corrette, accede alla dashboard.
+
+In caso contrario, riceve messaggio d’errore.
+
+C8. Ricercare attività formative
+Accede alla sezione "Ricerca attività".
+
+Inserisce uno o più filtri:
+
+hashtag
+
+corso di laurea
+
+area tematica
+
+data, ecc.
+
+Il sistema esegue la query e restituisce i risultati.
+
+Il docente può cliccare per visualizzare i dettagli.
+
+C9. Richiedere partecipazione
+Dalla pagina di un’attività, clicca su "Richiedi partecipazione".
+
+Compila:
+
+Numero studenti
+
+Eventuali note
+
+Invia la richiesta.
+
+Il sistema registra la richiesta come “In attesa”.
+
+Il sistema notifica il docente universitario.
+
+
+Amministratore
+C10. Gestire utenti
+Accede alla sezione utenti.
+
+Può:
+
+Modificare dati
+
+Disattivare account
+
+Assegnare ruoli
+
+Il sistema applica le modifiche al database.
+
+ C11. Gestire attività
+Può visualizzare tutte le attività.
+
+Può modificarle, cancellarle o segnalarle come inappropriate.
+
+Il sistema registra le azioni nel log.
+
+ C12. Gestire richieste
+Può monitorare tutte le richieste inviate.
+
+Può approvarle/rifiutarle al posto dei docenti.
+
+Tutte le azioni sono tracciate.
+
+
+
+

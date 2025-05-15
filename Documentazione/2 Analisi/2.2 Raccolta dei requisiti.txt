@@ -1,0 +1,37 @@
+I requisiti funzionali descrivono le funzionalità specifiche che il sistema deve offrire:
+
+RF1: Il sistema deve permettere ai docenti universitari di creare nuove attività formative, specificando titolo, descrizione, data, orario, luogo, destinatari (studenti o docenti), numero massimo di partecipanti e hashtag associati.
+
+RF2: Il sistema deve permettere ai docenti universitari di modificare o cancellare le attività da loro create.
+
+RF3: Il sistema deve permettere ai docenti delle scuole secondarie di cercare attività formative utilizzando filtri come hashtag, corso di laurea, docente e area tematica.
+
+RF4: Il sistema deve permettere ai docenti delle scuole secondarie di richiedere la partecipazione a una o più attività, specificando il numero di studenti partecipanti.
+
+RF5: Il sistema deve notificare ai docenti universitari le richieste di partecipazione ricevute e permettere loro di approvarle o rifiutarle.
+
+RF6: Il sistema deve gestire l'autenticazione degli utenti tramite un sistema di login con credenziali (email e password).
+
+RF7: Il sistema deve permettere la registrazione di nuovi utenti, distinguendo tra docenti universitari e docenti delle scuole secondarie.
+
+RF8: Il sistema deve permettere agli amministratori di gestire gli utenti e le attività presenti nel sistema.
+
+Requisiti Non Funzionali (RNF)
+I requisiti non funzionali definiscono le caratteristiche qualitative del sistema:
+
+RNF1 – Usabilità: Il sistema deve essere accessibile tramite i principali browser web (Chrome, Firefox, Safari, Edge) e garantire un'interfaccia utente intuitiva e facile da usare.
+
+RNF2 – Prestazioni: Il sistema deve garantire tempi di risposta inferiori a 2 secondi per il caricamento delle pagine principali, anche con un numero elevato di utenti simultanei.
+
+RNF3 – Sicurezza: Il sistema deve proteggere i dati degli utenti da accessi non autorizzati, implementando misure di sicurezza come la crittografia delle password e la prevenzione di attacchi comuni (es. SQL injection, XSS).
+
+RNF4 – Scalabilità: Il sistema deve essere progettato per supportare un aumento del numero di utenti e attività senza degradare le prestazioni.
+
+RNF5 – Manutenibilità: Il codice del sistema deve essere strutturato in modo da facilitare la manutenzione e l'aggiornamento, seguendo le best practice di sviluppo software.
+
+RNF6 – Portabilità: Il sistema deve essere containerizzato utilizzando Docker per facilitare la distribuzione e l'installazione su diversi ambienti.
+
+RNF7 – Affidabilità: Il sistema deve garantire un funzionamento continuo e senza errori frequenti, con un tempo medio tra i guasti (MTBF) adeguato alle esigenze degli utenti.
+
+RNF8 – Conformità: Il sistema deve essere conforme alle normative vigenti in materia di protezione dei dati personali (es. GDPR).
+

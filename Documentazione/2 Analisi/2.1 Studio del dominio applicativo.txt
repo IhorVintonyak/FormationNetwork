@@ -1,0 +1,57 @@
+1. Descrizione generale del dominio
+Il sistema si colloca nel contesto della collaborazione educativa tra enti formativi di diverso livello: scuole secondarie (superiori) e università. La piattaforma ha l’obiettivo di agevolare:
+
+la proposta, diffusione e richiesta di attività formative,
+
+la gestione strutturata di eventi come PCTO (ex alternanza scuola-lavoro), PLS (Piano Lauree Scientifiche), seminari, corsi, o iniziative di orientamento.
+
+
+2. Attori principali
+
+Docente universitario		Crea e gestisce le attività formative offerte dall’ateneo.
+Docente scuola			Ricerca attività utili per la propria scuola e richiede la partecipazione.
+Studente			Partecipante finale delle attività. Non interagisce direttamente con il sistema.
+Amministratore			Supervisiona, configura e gestisce utenti e contenuti del sistema.
+Sistema				Deve garantire accesso sicuro, tracciabilità, e prestazioni affidabili.
+
+
+3. Entità principali del dominio
+
+Attività			Iniziativa formativa con descrizione, destinatari, data/e, luogo, hashtag, ecc.
+Utente				Rappresenta un docente registrato nel sistema, con ruolo (universitario/scuola).
+Richiesta			Domanda da parte di un docente scuola per partecipare ad un’attività.
+Calendario eventi		Gestisce la pianificazione e visualizzazione delle attività.
+
+
+
+4. Processi fondamentali del dominio
+Creazione attività		Docente universitario	Inserisce titolo, descrizione, destinatari, hashtag, date, ecc.
+Ricerca e filtraggio attività	Docente scuola	Utilizza filtri per individuare attività pertinenti.
+Richiesta partecipazione	Docente scuola	Richiede partecipazione indicando numero studenti.
+Gestione richieste		Docente universitario / Amministratore	Approvazione o rifiuto.
+Visualizzazione attività	Tutti i docenti registrati	Consultazione pubblica delle attività disponibili.
+
+
+5. Vincoli organizzativi e normativi
+Il sistema deve identificare l’utente e il suo ente di appartenenza.
+
+Devono essere rispettati i limiti legati a: 
+	capienza massima delle attività;
+	tipologia dei destinatari (studenti o docenti);
+	frequenza (una tantum o ciclica).
+Il sistema non gestisce direttamente dati sensibili degli studenti (privacy).
+Deve garantire tracciabilità delle richieste e attività svolte (per fini di rendicontazione).
+
+
+6. Glossario di termini chiave
+PCTO			Percorsi per le Competenze Trasversali e per l’Orientamento. Attività extra-scolastiche con valore formativo.
+PLS			Piano Lauree Scientifiche. Iniziative di promozione per le lauree scientifiche.
+Hashtag			Etichette testuali usate per indicizzare e filtrare le attività (es. #orientamento, #chimica).
+Attività formativa	Evento didattico rivolto a scuole o docenti, come seminari, corsi o laboratori.
+
+
+7. Obiettivi del sistema nel dominio
+Facilitare la visibilità delle iniziative formative promosse dalle università.
+Permettere una connessione strutturata tra scuola e università.
+Automatizzare e rendere trasparente la gestione delle richieste e delle disponibilità.
+Fornire uno storico tracciabile delle attività svolte.

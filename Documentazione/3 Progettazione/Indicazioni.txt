@@ -1,0 +1,148 @@
+La fase di Progettazione in Ingegneria del Software è quella in cui trasformi i requisiti raccolti e analizzati (fase precedente) in una struttura tecnica e architetturale che guiderà l’implementazione del sistema.
+
+Per il tuo progetto “Gestione e condivisione di attività formativa tra enti”, questa fase è fondamentale perché:
+
+Devi usare un'architettura MVP client-server.
+
+Hai vincoli precisi: PHP lato server, JS/HTML/CSS lato client, REST API, Docker.
+
+La progettazione deve essere documentata e costituisce parte integrante della valutazione.
+
+🔧 Obiettivi della progettazione
+Definire l’architettura software (struttura globale del sistema).
+
+Progettare i componenti software e le loro responsabilità.
+
+Specificare le interfacce tra i componenti (es. endpoint REST).
+
+Preparare i modelli di dati (DB relazionale).
+
+Definire la gestione degli errori, sicurezza, logging.
+
+Documentare tutto con diagrammi UML e testo descrittivo.
+
+📌 Cosa devi fare nel dettaglio
+1. Scegli e documenta l'architettura del sistema
+Nel tuo caso:
+
+Architettura MVP (Model-View-Presenter).
+
+Comunicazione RESTful client-server.
+
+Docker per l’ambiente server (e opzionalmente per il client).
+
+📄 Cosa produrre:
+
+Descrizione dell’architettura generale.
+
+Diagramma dei componenti (Component Diagram UML).
+
+2. Progettazione delle classi
+Basandoti sul Class Diagram iniziale:
+
+Definisci le classi PHP (lato server) che gestiscono:
+
+Utenti
+
+AttivitàFormativa
+
+Richieste
+
+Hashtag
+
+Stabilisci responsabilità e metodi (es. AttivitàController::creaAttività()).
+
+📄 Cosa produrre:
+
+Class Diagram dettagliato (con metodi e attributi).
+
+Descrizione delle classi e delle responsabilità.
+
+3. Progettazione delle API REST
+Per ogni azione del sistema definisci:
+
+Endpoint (es. GET /api/attivita)
+
+Metodo HTTP (GET, POST, PUT, DELETE)
+
+Input/Output JSON
+
+Codici di risposta
+
+📄 Cosa produrre:
+
+Tabella delle API (documentazione endpoint).
+
+Sequence Diagram UML per i casi più importanti (es. richiesta partecipazione).
+
+4. Progettazione del Database
+Trasforma le classi in tabelle relazionali.
+
+Usa diagrammi ER o Schema Relazionale.
+
+Definisci chiavi primarie, esterne, e vincoli.
+
+📄 Cosa produrre:
+
+Diagramma Entità-Relazione.
+
+Script SQL iniziale di creazione schema.
+
+5. Progettazione dell’interfaccia utente (frontend)
+Non serve grafica elaborata, ma devi progettare:
+
+Le pagine HTML previste.
+
+I flussi utente (navigazione).
+
+I moduli di input/output.
+
+Le chiamate AJAX/Fetch a REST API.
+
+📄 Cosa produrre:
+
+Diagramma delle schermate (Wireframe).
+
+Elenco delle interazioni utente→funzionalità.
+
+6. Dockerizzazione
+Scrivi il Dockerfile per il backend PHP.
+
+Scrivi un docker-compose.yml che avvii:
+
+Server web (Apache/Nginx)
+
+Container DB (es. MySQL)
+
+(opzionale) container per il client statico
+
+📄 Cosa produrre:
+
+File Dockerfile
+
+File docker-compose.yml
+
+Istruzioni d’uso nel README
+
+7. Documentazione della progettazione
+La progettazione va documentata e messa sul repository GitHub. Include:
+
+Diagrammi UML
+
+Specifiche delle API
+
+Schema del database
+
+Docker setup
+
+Descrizione architettura
+
+📚 Riassunto: Output della fase di progettazione
+Output	Descrizione
+Architettura del sistema	Schema MVP e componenti
+Class diagram	Con metodi e attributi
+API REST	Tabella e documentazione
+Database	ER Diagram + script SQL
+Interfaccia utente	Wireframe + navigazione
+Docker	Dockerfile + docker-compose.yml
+Documentazione	File PDF o Markdown nel repository

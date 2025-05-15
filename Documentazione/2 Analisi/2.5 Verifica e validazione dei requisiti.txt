@@ -1,0 +1,14 @@
+Controllo di Avanzamento e Gestione del Codice
+
+Al termine di ciascuna scadenza intermedia (deadline), viene eseguito un controllo di avanzamento del progetto, finalizzato alla verifica della correttezza, completezza e integrità delle funzionalità sviluppate fino a quel momento.
+
+In caso di ritardi o difformità rispetto al piano previsto, è obbligatorio redigere un report di anomalia, utilizzando l’apposito modulo. Tale documento deve contenere:
+	Descrizione del problema riscontrato;
+	Analisi della causa;
+	Stima del tempo necessario per la risoluzione.
+
+Parallelamente, al termine di ogni giornata di lavoro, dovrà essere effettuato un commit del codice nel sistema di versionamento Git. Il commit andrà eseguito sul branch principale (main) oppure su un branch secondario, in funzione della fase di sviluppo e della natura della modifica effettuata.
+Ogni commit dovrà includere un messaggio esplicito e significativo, contenente:
+	La descrizione sintetica dell’attività svolta;
+	Il riferimento alla funzionalità o alla modifica implementata;
+	Eventuali note tecniche o osservazioni rilevanti.

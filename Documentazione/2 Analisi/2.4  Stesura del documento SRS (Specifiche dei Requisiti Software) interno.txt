@@ -1,0 +1,76 @@
+Documento di Specifica dei Requisiti Software (SRS)
+1. Introduzione
+1.1 Scopo del documento
+Questo documento definisce i requisiti funzionali e non funzionali del sistema software per la gestione e condivisione di attività formative tra enti scolastici e universitari. Il sistema permetterà la creazione, la ricerca e la richiesta di attività formative da parte di docenti delle scuole secondarie.
+1.2 Ambito del prodotto
+Il sistema sarà un'applicazione web accessibile tramite browser, che consentirà:
+•	La pubblicazione di attività formative da parte di enti universitari.
+•	La ricerca e la richiesta di partecipazione alle attività da parte di docenti delle scuole secondarie.
+•	La gestione delle richieste e delle attività da parte degli amministratori del sistema.
+1.3 Definizioni, acronimi e abbreviazioni
+•	SRS: Software Requirements Specification
+•	CRUD: Create, Read, Update, Delete
+•	REST: Representational State Transfer
+•	MVP: Model-View-Presenter
+•	PCTO: Percorsi per le Competenze Trasversali e per l'Orientamento
+1.4 Riferimenti
+•	Sommerville, I. Ingegneria del software, 10ª edizione, Pearson.
+•	Fowler, M. UML Distilled, 4ª edizione, Pearson.
+•	Documentazione del corso di Ingegneria del Software dell'Università di Parma.
+1.5 Panoramica del documento
+Il documento è strutturato come segue:
+•	Descrizione generale del sistema.
+•	Requisiti specifici, suddivisi in funzionali e non funzionali.
+•	Appendici contenenti glossario e riferimenti.
+________________________________________
+2. Descrizione generale
+2.1 Prospettiva del prodotto
+Il sistema sarà sviluppato come applicazione web client-server, con un'architettura basata su API RESTful. Il frontend sarà sviluppato utilizzando HTML, CSS e JavaScript, mentre il backend sarà implementato in PHP.
+2.2 Funzionalità del prodotto
+•	Gestione attività: creazione, modifica e cancellazione di attività formative.
+•	Ricerca attività: ricerca di attività tramite filtri come hashtag, corso di laurea, docente, area tematica.
+•	Richiesta partecipazione: i docenti delle scuole secondarie possono richiedere la partecipazione a una o più attività.
+•	Gestione utenti: registrazione, autenticazione e gestione dei profili utente.
+•	Gestione richieste: approvazione o rifiuto delle richieste di partecipazione da parte degli amministratori.
+2.3 Caratteristiche degli utenti
+•	Docenti universitari: creano e gestiscono le attività formative.
+•	Docenti delle scuole secondarie: cercano e richiedono la partecipazione alle attività.
+•	Amministratori: gestiscono il sistema, gli utenti e le richieste.
+2.4 Vincoli
+•	Utilizzo di PHP per il backend.
+•	Utilizzo di HTML, CSS e JavaScript per il frontend.
+•	Utilizzo di Docker per la containerizzazione del backend.
+•	Adozione del pattern architetturale MVP.
+2.5 Assunzioni e dipendenze
+•	Gli utenti hanno accesso a una connessione internet stabile.
+•	Gli utenti utilizzano browser moderni compatibili con le tecnologie web standard.
+•	Il sistema sarà ospitato su un server con supporto per PHP e Docker.
+________________________________________
+3. Requisiti specifici
+3.1 Requisiti funzionali
+RF1: Il sistema deve permettere ai docenti universitari di creare nuove attività formative, specificando titolo, descrizione, data, orario, luogo, destinatari (studenti o docenti), numero massimo di partecipanti e hashtag associati.
+RF2: Il sistema deve permettere ai docenti universitari di modificare o cancellare le attività da loro create.
+RF3: Il sistema deve permettere ai docenti delle scuole secondarie di cercare attività formative utilizzando filtri come hashtag, corso di laurea, docente e area tematica.
+RF4: Il sistema deve permettere ai docenti delle scuole secondarie di richiedere la partecipazione a una o più attività, specificando il numero di studenti partecipanti.
+RF5: Il sistema deve notificare ai docenti universitari le richieste di partecipazione ricevute e permettere loro di approvarle o rifiutarle.
+RF6: Il sistema deve gestire l'autenticazione degli utenti tramite un sistema di login con credenziali (email e password).
+RF7: Il sistema deve permettere la registrazione di nuovi utenti, distinguendo tra docenti universitari e docenti delle scuole secondarie.
+RF8: Il sistema deve permettere agli amministratori di gestire gli utenti e le attività presenti nel sistema.
+3.2 Requisiti non funzionali
+RNF1: Il sistema deve essere accessibile tramite i principali browser web (Chrome, Firefox, Safari, Edge).
+RNF2: Il sistema deve garantire tempi di risposta inferiori a 2 secondi per il caricamento delle pagine principali.
+RNF3: Il sistema deve essere conforme alle linee guida WCAG 2.1 per l'accessibilità.
+RNF4: Il sistema deve garantire la sicurezza dei dati degli utenti, implementando misure di protezione contro attacchi comuni come SQL injection e cross-site scripting (XSS).
+RNF5: Il sistema deve essere containerizzato utilizzando Docker per facilitare la distribuzione e l'installazione.
+RNF6: Il sistema deve essere scalabile per supportare un numero crescente di utenti e attività.
+________________________________________
+4. Appendici
+4.1 Glossario
+•	Attività formativa: Evento o iniziativa organizzata da un ente universitario, destinata a studenti o docenti delle scuole secondarie.
+•	Hashtag: Parola chiave preceduta dal simbolo "#" utilizzata per categorizzare le attività.
+•	PCTO: Percorsi per le Competenze Trasversali e per l'Orientamento, ex alternanza scuola-lavoro.
+4.2 Riferimenti
+•	Sommerville, I. Ingegneria del software, 10ª edizione, Pearson.
+•	Fowler, M. UML Distilled, 4ª edizione, Pearson.
+•	Documentazione del corso di Ingegneria del Software dell'Università di Parma.
+
