@@ -15,13 +15,15 @@
 
 +ente: string
 
-Metodi:
+	Metodi:
 
 +login()
 
 +registrati()
 
- AttivitàFormativa
+
+
+AttivitàFormativa
 +id: int
 
 +titolo: string
@@ -38,11 +40,13 @@ Metodi:
 
 +ricorrente: boolean
 
-Relazioni:
+	Relazioni:
 
 1 Utente (docente universitario) crea 0..* AttivitàFormativa
 
 1 AttivitàFormativa può avere 0..* Hashtag
+
+
 
  Hashtag
 +id: int
