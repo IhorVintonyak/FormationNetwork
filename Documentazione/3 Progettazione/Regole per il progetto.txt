@@ -1,0 +1,16 @@
+Il solito scheduling dep progetto non può essere applicato per. Ogni task dovrebbe durare almeno 1 settimana, non è possibile per mancanza di tempo.
+
+Applicazione per gestione dei task, Todoist. Per ogni task, deve essere determinata la priorità, tempo richiesto, descrizione.
+Ogni mattina si fa valutazione dei task, alla fine della giornata deve essere effettuato il commit, con descrizione del lavoro svolto. Commit deve essere effettuato al branch secondario, finche non sara effettuato il code review, e test, dopo di che può essere unito al branch principale. 
+Schema del progetto:
+Creazione del prototipo del design.
+Creati classi, e funzionamento del sito in locale.
+Creazione del funzionamento della base di dati, e lato server.
+Creazione del docker.
+
+
+Dettagli per il sviluppo:
+Task devono vere struttura di Story card
+Correttezza della Valutazione dei tusk deve essere svolta da TeamLead
+
+

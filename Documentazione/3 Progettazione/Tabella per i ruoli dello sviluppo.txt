@@ -1,0 +1,14 @@
+Durante fase di Implementazione sono coinvolti 3 ruoli:
+TeamLead,Software developer, UI/UX designer.
+
+
+Matrice RACI:
+R: Responsible (Responsabile)
+A: Accountable (supervisore)
+C: Consulted (Consultato)
+I: Informed (Informato)
+				Commit to main		Commit to 2' software	Commit to 2' design	Creazione/Conferma del task	Progettazione della grafica	Sviluppo del codice
+TeamLead			R				A			A				R				I			I
+Software developer		I				R			I				C				I			R
+UI/UX designer			I				I			R				C				R			I
+	

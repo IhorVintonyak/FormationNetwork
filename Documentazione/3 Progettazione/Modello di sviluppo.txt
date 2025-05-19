@@ -1,0 +1,9 @@
+Il modello a V
+Agile
+
+
+
+Pattern:
+Factory
+Iterator
+Prototype
