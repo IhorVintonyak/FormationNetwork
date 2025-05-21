@@ -1,0 +1,4 @@
+
+Model			Rappresenta i dati e la logica di business (es. interazione col database, validazioni, operazioni CRUD)
+View			È l’interfaccia utente (UI) visibile: HTML/CSS/JS. Si limita a mostrare dati e raccogliere input.
+Presenter		Controlla il flusso dell'applicazione. Riceve input dalla View, interagisce col Model e aggiorna la View. (è il "cervello" del sistema)

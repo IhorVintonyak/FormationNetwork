@@ -1,0 +1,6 @@
+Nel prototype design file. Nella pagina Creazione del evento, titolo è Prenotare, deve essere Creare.
+Nel prototype design file. Nella pagina Creazione del evento non è possibile inserire l'ora.
+Nel prototype design file. Nella pagina main non è possibile sapere l'orario.
+Nel prototype design e design files. Nella pagina è assente bottone per creare evento.
+Nel design file 2 volte è presente pagine senza cambiamenti, di nome "Main utente con login" e registrazione.
+Nella pagine di creazione di evento, e prenotazione, è assente il pulsante "il mio account".
