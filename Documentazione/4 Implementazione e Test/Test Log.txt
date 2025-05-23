@@ -9,3 +9,7 @@ Nella pagine di creazione di evento, e prenotazione, è assente il pulsante "il 
 
 22/05/2025
 Stessa classe si chiama "Attivita" e "Evento" nei classi diversi.
+
+23/05/2025
+Errore nella classe "eventTagsZone" nel file main.html. Larghezza massima non è impostata. Tags e il bottone "Prenotare" non sono allineati.
+Nel file main.html, bottone deve essere disabilitato se il login non è stato effettuato.

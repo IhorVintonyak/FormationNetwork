@@ -1,0 +1,123 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+	background-color: aqua;	
+    text-align:center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.header{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    
+}
+.titolo{
+    margin-left: 20px;
+    color:blue;
+    text-transform: uppercase;
+}
+.login{
+    margin-left: 10%;
+    text-align: right;
+}
+.loginButton{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+}
+.createButton{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+}
+Textarea{
+    width: 50%;
+    height: 35px;
+    border-radius: 10em;
+    text-align: center;
+    padding-top: 9px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: blue;
+
+}
+.listTags{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    max-width: 500px;
+}
+.tagButton{
+    color: blue;
+    background-color:white;
+    border-radius: 10%;
+    padding: 4px;
+    font-size: 15px;
+    margin: 4px 5px;
+}
+.event{
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    width: 60%;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: left;
+}
+.event div{
+    margin: 12px;
+
+}
+.eventFooter{
+    margin: 10px;
+    padding-top: 10px;
+
+}
+.eventTagsZone{
+    max-width: 200px;
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top:10px;
+    color: blue;
+    max-width: 200px;
+}
+.eventTagsZoneTag{
+    background-color: white;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 8px;
+    color: blue;
+}
+.eventPrenote{
+    margin-left: 40%;
+    text-align: right;
+}
+.eventPrenoteButton{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+}
