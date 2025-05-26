@@ -16,14 +16,15 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 body{
-	background-color: aqua;	
+    margin-top: 10px;
+	background-color: #76fff5;	
     text-align:center;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 .header{
-    padding-left: 10%;
-    padding-right: 10%;
     margin: auto;
     
 }
@@ -31,6 +32,10 @@ body{
     margin-left: 20px;
     color:blue;
     text-transform: uppercase;
+    font-size: 20px;
+}
+.logoImg{
+    width: 40px;
 }
 .login{
     margin-left: 10%;
@@ -50,6 +55,11 @@ body{
     font-size: 20px;
     padding: 5px 13px 5px 13px;
 }
+
+.createButtonLink{
+    color: white;
+}
+
 Textarea{
     width: 50%;
     height: 35px;
@@ -66,13 +76,13 @@ Textarea{
     margin-top: 20px;
     text-align: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 600px;
 }
 .tagButton{
     color: blue;
     background-color:white;
-    border-radius: 10%;
-    padding: 4px;
+    border-radius: 15px;
+    padding: 7px;
     font-size: 15px;
     margin: 4px 5px;
 }
@@ -84,9 +94,13 @@ Textarea{
     border-radius: 20px;
     padding: 10px;
     text-align: left;
+    border-style: dotted;
+    border-width: 6px;
+    border-color:blue;
 }
 .event div{
     margin: 12px;
+    margin-bottom: 20px;
 
 }
 .eventFooter{
@@ -96,7 +110,7 @@ Textarea{
 }
 .eventTagsZone{
     max-width: 200px;
-    background-color: aqua;
+    background-color: #76fff5;
     padding: 10px 20px;
     border-radius: 10px;
     margin-top:10px;
@@ -115,9 +129,110 @@ Textarea{
     text-align: right;
 }
 .eventPrenoteButton{
+    margin-top: 30px;
     background-color: blue;
     color:white;
     border-radius: 13px;
     font-size: 20px;
     padding: 5px 10px 5px 10px;
+}
+
+
+
+
+.layout{
+    margin-top: 100px;
+}
+.layout div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.accountNameText{
+    font-size: 25px;
+}
+.accountNameInput{
+    padding-top: 14px;
+}
+.loginButtonLog{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+}
+.loginButtonReg{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+hr {
+  display: block;
+  width: 500px;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color: blue;
+}
+.accountNameText{
+    font-size: 25px;
+    color: blue;
+}
+.accountPasswordText{
+    font-size: 25px;
+    color: blue;
+}
+.accountEmailText{
+    font-size: 25px;
+    color: blue;
+}
+.accountRoleText{
+    font-size: 25px;
+    color: blue;
+}
+.accountRoleSco{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+.accountRoleUni{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+.loginButtonCreate{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.createEventText{
+    font-size: 35px;
+    color: blue;
 }
