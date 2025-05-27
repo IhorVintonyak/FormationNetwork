@@ -4,7 +4,7 @@
 
 	<head>
 		
-		<title>Richiesta</title>
+		<title>Login</title>
 		<link rel="stylesheet" href="../style/style.css" />
 		
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -12,20 +12,33 @@
 
 	<body>
 		<div class="header">
-            <div>FORMATION NETWORK</div>
-            <div>Account/Login</div>
+			<span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
+            <a class="titolo" href="./main.html">FORMATION NETWORK</a>
 		</div>
 		<div class="layout">
-            <div class="titolo">Prenotazione</div>
+                  <div class="createEventText">Prenotazione</div>
+		      
+                  <div class="accountName">
+            	      <span class="accountNameText">Evento di nome:</span>
+            	      <span class="accountNameInput"><input></span>
+                  </div>
 
-            <div class="eventoCorto">Evento di nome:</div>
+			<div class="accountPassword">
+            	      <span class="accountPasswordText">Data:</span>
+            	      <span class="accountPasswordInput"><input></span>
+			</div>
 
-            
-            <div class="eventoNumeroPrenotare">Numero di studenti per la prenotazione:</div>
-            <div class="eventoDescrizioneInput"><Textarea></Textarea></div>
-            <div class="eventoNumeroMax"></div>
+			<div class="createNumber">
+            	      <span class="createNumberText">Numero di posti:</span>
+            	      <span class="createNumberInput"><input></span>
+					  <span class="createNumberTextMax">max. xxx</span>
+			</div>
 
-            <div class="buttonReserve">Prenotare</div>
-		</div>	
+                  <div class="accountPassword">
+            	      <span class="accountPasswordText">Descrizione:</span>
+            	      <span class="accountPasswordInput"><input></span>
+			</div>
+            <div class="createButtonPrenote">Prenotare</div>
+
 	</body>
 </html>

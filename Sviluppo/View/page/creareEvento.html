@@ -17,31 +17,28 @@
 		</div>
 		<div class="layout">
                   <div class="createEventText">Creare evento</div>
-		      
-                  <div class="accountName">
-            	      <span class="accountNameText">Evento di nome:</span>
-            	      <span class="accountNameInput"><Textarea></Textarea></span>
-                  </div>
 
-			<div class="accountPassword">
-            	      <span class="accountPasswordText">Data:</span>
-            	      <span class="accountPasswordInput"><Textarea></Textarea></span>
-			</div>
+			<form action="../../Presenter/createEvent.php" method="post">
+				<div class="accountName">
+					<span class="accountNameText">Evento di nome:</span>
+					<span class="accountNameInput"><input type="text" name="eventName"	class="form-control"></span>
+				</div>
 
-			<div class="accountPassword">
-            	      <span class="accountPasswordText">Numero di posti:</span>
-            	      <span class="accountPasswordInput"><Textarea></Textarea></span>
-			</div>
+				<div class="accountPassword">
+						<span class="accountPasswordText">Data:</span>
+						<span class="accountPasswordInput"><input type="text" name="date"	class="form-control"></span></span>
+				</div>
 
-                  <div class="accountPassword">
-            	      <span class="accountPasswordText">Descrizione:</span>
-            	      <span class="accountPasswordInput"><Textarea></Textarea></span>
-			</div>
+				<div class="accountPassword">
+						<span class="accountPasswordText">Numero di posti:</span>
+						<span class="accountPasswordInput"><input type="text" name="number"	class="form-control"></span></span>
+				</div>
 
-
-
-
-            <div class="loginButtonLog">Crea</div>
-
+				<div class="accountPassword">
+						<span class="accountPasswordText">Descrizione:</span>
+						<span class="accountPasswordInput"><input type="text" name="description"	class="form-control"></span></span>
+				</div>
+            <div><input class="loginButtonLog" type="submit"></div>
+		</form>
 	</body>
 </html>

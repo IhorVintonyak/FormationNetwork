@@ -60,7 +60,7 @@ body{
     color: white;
 }
 
-Textarea{
+input{
     width: 50%;
     height: 35px;
     border-radius: 10em;
@@ -135,6 +135,9 @@ Textarea{
     border-radius: 13px;
     font-size: 20px;
     padding: 5px 10px 5px 10px;
+}
+.eventPrenoteButton a{
+    color: white;
 }
 
 
@@ -235,4 +238,23 @@ hr {
 .createEventText{
     font-size: 35px;
     color: blue;
+}
+
+.createButtonPrenote{
+    background-color: blue;
+    color:white;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 5px 13px 5px 13px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+.createNumberText{
+    color: blue;
+     font-size: 25px;
+}
+.createNumberTextMax{
+    color: blue;    
+     font-size: 25px;
 }
