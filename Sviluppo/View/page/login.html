@@ -10,26 +10,35 @@
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
 
-	<body>
-		<div class="header">
-			<span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
-            <a class="titolo" href="./main.html">FORMATION NETWORK</a>
-		</div>
-		<div class="layout">
-			<div class="accountName">
-            	<span class="accountNameText">Utente:</span>
-            	<span class="accountNameInput"><input></span>
-            </div>
+	<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
+        <a class="titolo" href="./main.html">FORMATION NETWORK</a>
+    </div>
 
-			<div class="accountPassword">
-            	<span class="accountPasswordText">Password:</span>
-            	<span class="accountPasswordInput"><input></span>
-			</div>
-            <div class="loginButtonLog">Login</div>
+    <form action="../../Presenter/login.php" method="post" class="layout">
+        <div class="accountName">
+            <span class="accountNameText">Utente:</span>
+            <span class="accountNameInput"><input type="text" name="username"></span>
+        </div>
 
-			<hr class="line">
-			
-            <div><a href="./registrazione.html" class="loginButtonReg">Regisrtazione</a></div>
-		</div>	
-	</body>
+        <div class="accountPassword">
+            <span class="accountPasswordText">Password:</span>
+            <span class="accountPasswordInput"><input type="password" name="password"></span>
+        </div>
+
+        <div>
+            <input type="submit" class="loginButtonLog" value="Login">
+        </div>
+
+        <hr class="line">
+
+        <div><a href="./registrazione.html" class="loginButtonReg">Registrazione</a></div>
+    </form>
+</body>
 </html>

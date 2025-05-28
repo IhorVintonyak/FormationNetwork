@@ -11,34 +11,38 @@
 	</head>
 
 	<body>
-		<div class="header">
-			<span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
-            <a class="titolo" href="./main.html">FORMATION NETWORK</a>
-		</div>
-		<div class="layout">
-                  <div class="createEventText">Prenotazione</div>
-		      
-                  <div class="accountName">
-            	      <span class="accountNameText">Evento di nome:</span>
-            	      <span class="accountNameInput"><input></span>
-                  </div>
+    <div class="header">
+        <span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
+        <a class="titolo" href="./main.html">FORMATION NETWORK</a>
+    </div>
 
-			<div class="accountPassword">
-            	      <span class="accountPasswordText">Data:</span>
-            	      <span class="accountPasswordInput"><input></span>
-			</div>
+    <form action="../../Presenter/prenota_evento.php" method="post" class="layout">
+        <div class="createEventText">Prenotazione</div>
 
-			<div class="createNumber">
-            	      <span class="createNumberText">Numero di posti:</span>
-            	      <span class="createNumberInput"><input></span>
-					  <span class="createNumberTextMax">max. xxx</span>
-			</div>
+        <div class="accountName">
+            <span class="accountNameText">Evento di nome:</span>
+            <span class="accountNameInput"><input type="text" name="eventName"></span>
+        </div>
 
-                  <div class="accountPassword">
-            	      <span class="accountPasswordText">Descrizione:</span>
-            	      <span class="accountPasswordInput"><input></span>
-			</div>
-            <div class="createButtonPrenote">Prenotare</div>
+        <div class="accountPassword">
+            <span class="accountPasswordText">Data:</span>
+            <span class="accountPasswordInput"><input type="text" name="date"></span>
+        </div>
 
-	</body>
+        <div class="createNumber">
+            <span class="createNumberText">Numero di posti:</span>
+            <span class="createNumberInput"><input type="number" name="number"></span>
+            <span class="createNumberTextMax">max. xxx</span>
+        </div>
+
+        <div class="accountPassword">
+            <span class="accountPasswordText">Descrizione:</span>
+            <span class="accountPasswordInput"><input type="text" name="description"></span>
+        </div>
+
+        <div>
+            <input type="submit" class="createButtonPrenote" value="Prenotare">
+        </div>
+    </form>
+</body>
 </html>

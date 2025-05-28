@@ -10,38 +10,39 @@
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
 
-	<body>
-		<div class="header">
-			<span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
-            <a class="titolo" href="./main.html">FORMATION NETWORK</a>
-		</div>
+<body>
+    <div class="header">
+        <span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
+        <a class="titolo" href="./main.html">FORMATION NETWORK</a>
+    </div>
 
-		<div class="layout">
-		
-            <div class="accountName">
-            	<span class="accountNameText">Utente:</span>
-            	<span class="accountNameInput"><input></span>
-            </div>
-		
-            <div class="accountPassword">
-            	<span class="accountPasswordText">Password:</span>
-            	<span class="accountPasswordInput"><input></span>
-		</div>
+    <form action="../../Presenter/register_user.php" method="post" class="layout">
+        <div class="accountName">
+            <span class="accountNameText">Utente:</span>
+            <span class="accountNameInput"><input type="text" name="username"></span>
+        </div>
 
-		<div class="accountRole">
-            	<span class="accountRoleText">Role:</span>
-            	<span class="accountRoleInput">
-                        <span><button class="accountRoleSco">Scolastico</button></span>
-                        <span><button class="accountRoleUni">Universitario</button></span>
-                  </span>
-		</div>
-            
-		<div class="accountEmail">
-            	<span class="accountEmailText">email:</span>
-            	<span class="accountEmailInput"><input></span>
-		</div>
+        <div class="accountPassword">
+            <span class="accountPasswordText">Password:</span>
+            <span class="accountPasswordInput"><input type="password" name="password"></span>
+        </div>
 
-            <div class="loginButtonCreate">Creare account</div>
-	
-	</body>
+        <div class="accountRole">
+            <span class="accountRoleText">Ruolo:</span>
+            <span class="accountRoleInput">
+                <input type="radio" name="role" value="scolastico" id="sco" class="radio"><label for="sco" class="accountRoleSco">Scolastico</label>
+                <input type="radio" name="role" value="universitario" id="uni" class="radio"><label for="uni" class="accountRoleUni">Universitario</label>
+            </span>
+        </div>
+
+        <div class="accountEmail">
+            <span class="accountEmailText">Email:</span>
+            <span class="accountEmailInput"><input type="email" name="email"></span>
+        </div>
+
+        <div>
+            <input type="submit" class="loginButtonCreate" value="Crea account">
+        </div>
+    </form>
+</body>
 </html>

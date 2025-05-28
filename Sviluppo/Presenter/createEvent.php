@@ -20,7 +20,7 @@
             $record = "$eventName | $date | $number posti | $description" . PHP_EOL;
 
             // Scrittura su file
-            file_put_contents("eventi.txt", $record, FILE_APPEND);
+            file_put_contents("../Model/eventi.txt", $record, FILE_APPEND);
 
             echo "<p style='color:green;'>Evento registrato con successo!</p>";
         } else {

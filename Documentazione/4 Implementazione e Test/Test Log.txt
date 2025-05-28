@@ -13,3 +13,8 @@ Stessa classe si chiama "Attivita" e "Evento" nei classi diversi.
 23/05/2025
 Errore nella classe "eventTagsZone" nel file main.html. Larghezza massima non è impostata. Tags e il bottone "Prenotare" non sono allineati.
 Nel file main.html, bottone deve essere disabilitato se il login non è stato effettuato.
+
+28/05/2025
+Nel browser Opera GX sito ha problema di visuallizazione nella pagina regisrtazione. Nella scelta di ruolo.
+!Modificazione! Togliere a chi creato l'evento rifiutare la regisrtazione. Prenotazione viene rifiutata(non viene acettata) se I posti sono occupati.
+Creare bottone cerca vicino a casella per la ricerca.
