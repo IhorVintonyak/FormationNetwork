@@ -1,0 +1,6 @@
+A seguito di una revisione interna dello stato di avanzamento, è emerso che il progetto non è ancora in una condizione adeguata per essere presentato al cliente. Pertanto, si è deciso di posticipare la data della presentazione al 24 giugno 2025.
+
+Motivazioni del rinvio:
+Le tecnologie adottate risultano nuove per il team di sviluppo, richiedendo un tempo di apprendimento maggiore del previsto.
+Alcuni membri del team sono attualmente coinvolti anche in altri progetti, con conseguente ridotta disponibilità.
+Il team leader non dispone di un'esperienza consolidata nella pianificazione progettuale e nella definizione dei tempi di sviluppo.
