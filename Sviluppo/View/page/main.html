@@ -6,17 +6,16 @@
 		
 		<title>Main</title>
 		<link rel="stylesheet" href="../style/style.css" />
-		
+		<script src="../scipt/script.js" type="text/javascript"></script>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
 
-	<body>
+	<body onload="onLoadPage()">
 		<div class="header">
 			<span><img src="../style/img/grok-seeklogo.png" alt="Logo" class="logoImg"></span>
             <a class="titolo" href="./main.html">FORMATION NETWORK</a>
             <a class="login" href="./login.html"><button class="loginButton" >LOGIN</button></a>
-			<span class="create"><button class="createButton"><a href="./creareEvento.html" class="createButtonLink">Creare evento</a></button></span>
-		</div>
+			<span class="create" id="createEvent"><button class="createButton"><a href="./creareEvento.html" class="createButtonLink">Creare evento</a></button></span>
 		<div class="layout">
             <div class="searchInput"><input></div>
             <div class="listTags">
@@ -44,7 +43,7 @@
 							<span class="eventTagsZoneTag">#INGEGNERIA</span>
 							<span class="eventTagsZoneTag">#UNIPR</span>
 						</span>
-						<span class="eventPrenote"><button class="eventPrenoteButton"><a href="./richiesta.html">Prenotare</a></button></span>
+						<span class="eventPrenote" id="prenote"><button class="eventPrenoteButton"><a href="./richiesta.html">Prenotare</a></button></span>
 					</div>
 				</div>
             </div>
